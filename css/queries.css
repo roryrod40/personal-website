@@ -1,0 +1,308 @@
+/***************************/
+/* BELOW 1344px (Smaller desktops) */
+/***************************/
+@media (max-width: 84em) {
+  .nav-list {
+    padding: 0 4.8rem;
+  }
+}
+
+/***************************/
+/* BELOW 1200px (Landscape Tablets) */
+/***************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .experience-courses {
+    gap: 2.4rem;
+  }
+
+  .experience-course:link,
+  .experience-course:visited {
+    padding: 1.2rem 2rem;
+  }
+
+  .project-slider-btn {
+    height: 8rem;
+    width: 8rem;
+  }
+  .project-slider-btn-icon {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
+}
+
+/***************************/
+/* BELOW 944px (Tablets) */
+/***************************/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .section {
+    padding: 8rem 0;
+  }
+
+  .header-container {
+    padding-top: 25.6rem;
+  }
+
+  .about-content {
+    grid-template-columns: 80fr 20fr;
+  }
+
+  .nav-mobile-btn {
+    display: block;
+    z-index: 99;
+    float: right;
+    padding: 1.2rem 2.4rem 1.2rem 0;
+  }
+
+  .nav {
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen reader */
+    visibility: hidden;
+  }
+
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .nav-mobile-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .nav-mobile-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+    color: #1971c2;
+    padding: 0;
+  }
+
+  .nav-link:hover,
+  .nav-link:active {
+    background-color: transparent;
+  }
+
+  .project {
+    height: 85%;
+  }
+
+  .project-link {
+    transform: scale(1.6);
+  }
+
+  .project-dot {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+}
+
+/***************************/
+/* BELOW 704px (Smaller tablets) */
+/***************************/
+@media (max-width: 45em) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-text {
+    padding: 0 1.6rem;
+  }
+
+  .headshot-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .headshot-background {
+    width: 40rem;
+    justify-content: center;
+  }
+
+  .experience-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience-title-section {
+    margin-bottom: 3.2rem;
+  }
+
+  .experience-course:link,
+  .experience-course:visited {
+    padding: 1.6rem 2.4rem;
+  }
+
+  .project-subheading {
+    margin-bottom: 0;
+  }
+
+  .project-slider {
+    max-width: 75rem;
+    height: 75rem;
+  }
+
+  .project-slide {
+    height: 75rem;
+  }
+  .project-slider-btn-left {
+    left: 10%;
+  }
+
+  .project-slider-btn-right {
+    right: 10%;
+  }
+
+  .project {
+    flex-direction: column-reverse;
+    width: 80%;
+    padding: 3.2rem 4.8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 4.8rem;
+  }
+
+  .project-link {
+    transform: scale(1.4);
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/***************************/
+/* BELOW 544px (Phones) */
+/***************************/
+@media (max-width: 34em) {
+  .heading-primary {
+    font-size: 6.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 5.2rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .heading-tertiary {
+    font-size: 3.6;
+  }
+
+  .headshot-background {
+    width: 30rem;
+  }
+
+  .experience-courses {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-slider {
+    height: 75rem;
+  }
+
+  .project-slide {
+    height: 75rem;
+  }
+
+  .project-link {
+    transform: scale(1);
+  }
+
+  .contact-link {
+    display: block;
+  }
+
+  .heading-contact {
+    padding: 0;
+  }
+}
+
+/***************************/
+/* BELOW 384px (Small Phones) */
+/***************************/
+@media (max-width: 24em) {
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 4.4rem;
+  }
+
+  .project-slider {
+    height: 100rem;
+  }
+
+  .project-slide {
+    height: 100rem;
+  }
+
+  .project-slider-btn {
+    height: 5.2rem;
+    width: 5.2rem;
+  }
+
+  .project-slider-btn-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  .heading-contact {
+    font-size: 4.4rem;
+  }
+
+  .contact-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .contact-link:link,
+  .contact-link:visited {
+    font-size: 1.6rem;
+  }
+}
