@@ -51,7 +51,9 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 
 headerObserver.observe(header);
 
-//Reveal sections
+/***************************/
+/* Reveal Sections */
+/***************************/
 const revealSection = function (entries, observer) {
   const [entry] = entries;
 
@@ -164,8 +166,11 @@ btnNavEl.addEventListener("click", function () {
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
-    if (link.classList.contains("nav-link") && nav.style.zIndex === -1) {
-      header.classList.toggle("nav-open");
+    if (
+      link.classList.contains("nav-link") &&
+      header.classList.contains("nav-open")
+    ) {
+      header.classList.remove("nav-open");
       toggleSendBack([headerDescription, headingPrimary]);
     }
   });

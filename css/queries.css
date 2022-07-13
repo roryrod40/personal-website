@@ -275,11 +275,11 @@
   }
 
   .project-slider {
-    height: 100rem;
+    height: 90rem;
   }
 
   .project-slide {
-    height: 100rem;
+    height: 90rem;
   }
 
   .project-slider-btn {
@@ -304,5 +304,32 @@
   .contact-link:link,
   .contact-link:visited {
     font-size: 1.6rem;
+  }
+}
+
+/***************************/
+/* BELOW 320px (Very Small Phones) */
+/***************************/
+@media (max-width: 20em) {
+  .project-slider {
+    height: 100rem;
+  }
+
+  .project-slide {
+    height: 100rem;
+  }
+
+  .contact-links {
+    row-gap: 3.6rem;
+  }
+
+  .contact-icon {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .contact-link:link,
+  .contact-link:visited {
+    font-size: 1.2rem;
   }
 }
