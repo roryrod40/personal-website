@@ -115,7 +115,7 @@
   box-shadow: 0 2.4rem 48rem rgba(0, 0, 0, 0.08);
   border-radius: 13px;
   overflow: hidden;
-  transition: all, 0.4s;
+  transition: all 0.4s;
   background-color: #d0ebff;
   /* border: 2px solid #333; */
 }
@@ -254,6 +254,18 @@
   line-height: 1.6;
 }
 
+.position-link:link,
+.position-link:visited {
+  text-decoration: none;
+  color: #1971c2;
+  transition: all 0.3s;
+}
+
+.position-link:hover,
+.position-link:active {
+  color: #1864ab;
+}
+
 /***************************/
 /* Projects */
 /***************************/
@@ -376,7 +388,7 @@
 .project-img {
   height: 100%;
   overflow: hidden;
-  transition: all, 0.4s;
+  transition: all 0.4s;
 }
 
 .project-img:hover {
@@ -509,6 +521,7 @@
   gap: 0.8rem;
   align-items: center;
   text-decoration: none;
+  transition: all 0.3s;
 }
 
 .contact-link:hover,
