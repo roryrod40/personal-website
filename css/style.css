@@ -226,43 +226,44 @@
   background-color: #1864ab;
 }
 
-.positions {
+.work-experiences {
   margin-top: 6.4rem;
 }
 
-.position-descriptions {
+.work-experience-descriptions {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
 }
 
-.position-description {
+.work-experience-description {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 0.8rem;
 }
 
-.position-icon {
+.work-experience-icon {
   height: 3rem;
   width: 3rem;
   color: #1971c2;
 }
 
-.position-text {
+.work-experience-text {
+  width: 100%;
   font-size: 2rem;
   line-height: 1.6;
 }
 
-.position-link:link,
-.position-link:visited {
+.work-experience-link:link,
+.work-experience-link:visited {
   text-decoration: none;
   color: #1971c2;
   transition: all 0.3s;
 }
 
-.position-link:hover,
-.position-link:active {
+.work-experience-link:hover,
+.work-experience-link:active {
   color: #1864ab;
 }
 
