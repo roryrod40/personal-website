@@ -412,12 +412,30 @@
   margin-bottom: 2.4rem;
 }
 
+.project-tag-container {
+  display: inline-block;
+}
+
 .project-tag {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.2rem;
   padding: 0.8rem;
   border-radius: 10rem;
+}
+
+.project-tag-link:link,
+.project-tag-link:visited {
+  text-decoration: none;
+  background-color: #aaa;
+  color: #333;
+}
+
+.project-tag-link:hover,
+.project-tag-link:active {
+  text-decoration: none;
+  background-color: #b6b6b6;
+  transition: all 0.3s;
 }
 
 .project-tag-html {
@@ -448,6 +466,7 @@
 
 .project-tag-text {
   font-size: 1.8rem;
+  /* width: 100%; */
 }
 
 .project-description {
@@ -460,6 +479,7 @@
 .project-github-link:visited {
   text-decoration: none;
   color: #1971c2;
+  transition: all 0.3s;
 }
 
 .project-github-link:hover,

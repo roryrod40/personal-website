@@ -133,6 +133,12 @@
     transform: scale(1.6);
   }
 
+  .project-tags {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
   .project-dot {
     height: 1.6rem;
     width: 1.6rem;
@@ -253,6 +259,10 @@
     transform: scale(1);
   }
 
+  .project-tags {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .contact-link {
     display: block;
   }
@@ -280,6 +290,12 @@
 
   .project-slide {
     height: 90rem;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
   }
 
   .project-slider-btn {
